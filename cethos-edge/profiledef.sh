@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="ceontechos"
-iso_label="CETHOS_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="CeonTech OS by CeonTech Inc."
-iso_application="CeonTech OS Live/Rescue Boot ISO"
+iso_name="cethoscutedge"
+iso_label="cethoscutedge_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
+iso_publisher="CeonTech OS Cutting Edge <https://github.com/Ceontaro-Git/cethos-cutedge-experimental>"
+iso_application="CeonTech OS Cutting Edge Live ISO"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%w)"
-install_dir="cethos"
+install_dir="cethosedge"
 buildmodes=('iso')
 bootmodes=('bios.syslinux'
            'uefi.grub')
@@ -16,6 +16,7 @@ airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86' '-b' '1M' '-Xdict-size' 
 bootstrap_tarball_compression=('zstd' '-c' '-T0' '--auto-threads=logical' '--long' '-19')
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
+  ["/etc/gshadow"]="0:0:400"
   ["/root"]="0:0:750"
   ["/root/.automated_script.sh"]="0:0:755"
   ["/root/.gnupg"]="0:0:700"
