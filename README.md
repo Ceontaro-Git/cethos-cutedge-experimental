@@ -17,4 +17,5 @@ CeonTech OS Cutting Edge likes simplicity and user-friendly for newcomers to use
 > [!IMPORTANT]
 > It is best to report the bug as soon as possible for quick changes with the build.
 <br/>
+
 # Image Preview
