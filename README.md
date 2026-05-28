@@ -41,7 +41,7 @@ CeonTech OS system requirements does not need to be fancy to operate. However, m
 | :--- | :--- | :--- |
 | **Processor** | Intel Core i3 Gen 5 | AMD Ryzen 5 3600 |
 | **GPU** | AMD Vega 3 | Nvidia GeForce MX230 |
-| **RAM** | 8 GB | 16 GB |
+| **RAM** | 6 GB | 16 GB |
 | **Storage** | 60 GB Free Space | 256 GB Free Space |
 | **Display** | 1366 x 768 | 1920 x 1080 |
 | **Architecture** | x86_64 | x86_64 |
